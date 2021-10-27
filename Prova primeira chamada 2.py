@@ -38,14 +38,14 @@ def pares():
 list_1 = list()
 while True:
     try:
-        pergunta_1 = int(input("Digite valores numéricos:"))
+        pergunta_1 = float(input("Digite valores numéricos:"))
         list_1.append(pergunta_1)
         pass
     except ValueError:
         print("Digite corretamente!")
         continue
     try:
-        pergunta_2 = input("Escreva C se deseja continuar ou S se deseja sair:").lower()
+        pergunta_2 = input("Escreva C se deseja continuar ou S se deseja sair:").lower().strip()
     except ValueError:
         print("Escreva apena C ou S!")
         continue
